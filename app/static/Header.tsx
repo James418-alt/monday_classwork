@@ -24,6 +24,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
           {nav.map((el: any) => (
             <Link
+              key={el.id}
               href={el.url}
               className="border flex rounded-md gap-2 items-center px-3 py-1 text-[15px]"
             >
