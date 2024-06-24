@@ -8,10 +8,6 @@ const DisplayScreen = async () => {
   const url = "https://monday-classwork.vercel.app/api/post";
   const res = await fetch(url, {
     method: "GET",
-    cache: "no-cache",
-    next: {
-      tags: ["image"],
-    },
   });
 
   revalidateTag("image");
