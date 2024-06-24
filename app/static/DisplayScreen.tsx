@@ -5,7 +5,7 @@ import moment from "moment";
 import { MdDelete } from "react-icons/md";
 
 const DisplayScreen = async () => {
-  const url = "http://localhost:3000/api/post";
+  const url = "https://monday-classwork.vercel.app/api/post";
   const res = await fetch(url, {
     method: "GET",
     cache: "no-cache",
